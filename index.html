@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="main-title" id="main-title">cruds</h1>
+    <span class="sub-title">create read update delete search</span>
+    <form id="create-form">
+        <input type="text"  class="block dark-mode input" placeholder="title" id="title">
+        <div class="calc">
+            <input type="text" class="input dark-mode" placeholder="price" id="price">
+            <input type="text" class="input dark-mode" placeholder="taxes" id="taxes">
+            <input type="text" class="input dark-mode" placeholder="ads" id="ads">
+            <input type="text" class="input dark-mode" placeholder="discount" id="discount">
+            <input type="text" class="input total" placeholder="Total" id="total" disabled data-total>
+        </div>
+        <input type="text" placeholder="count" class="block dark-mode input" id="count">
+        <input type="text" placeholder="category" class="block dark-mode input" id="category">
+        <input type="submit" value="Create" class="btn block" id="create-btn">
+        <input type="submit" value="Update" class="btn block hide" id="update-btn">
+    </form>
+    <form id="search-form">
+        <input type="text" class="input dark-mode" placeholder="search" id="search-bar">
+        <div class="search-type">
+            <input type="submit" value="Search By Title" class="btn block" id="search-title">
+            <input type="submit" value="Search By Category" class="btn block" id="search-category">
+        </div>
+        <input type="submit" value="Delete All" class="btn block" id="delete-all">
+    </form>
+    <table id="item-table">
+        <thead>
+            <td>ID</td>
+            <td>TITLE</td>
+            <td>PRICE</td>
+            <td>TAXIS</td>
+            <td>ADS</td>
+            <td>DISCOUNT</td>
+            <td>TOTAL</td>
+            <td>CATEGORY</td>
+            <td>UPDATE</td>
+            <td>DELETE</td>
+        </thead>
+    </table>
+</body>
+</html>

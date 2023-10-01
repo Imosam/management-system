@@ -1,0 +1,105 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    color:white;
+    background-color: hsl(220,0%,10%);
+    padding: 0 2rem;
+}
+
+.main-title {
+    text-transform: uppercase;
+}
+.sub-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.block {
+    display: block;
+    width: 100%;
+}
+.dark-mode {
+    background-color:hsl(220,0%,5%) ;
+    color: white;
+}
+.input,.btn {
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5em;
+}
+.btn{
+    background-color: hsl(250,50%,40%);
+    color: white;
+    cursor: pointer;
+    transition: background 500ms;
+    font-weight: 600;
+}
+.btn:hover {
+    background-color: hsl(250,50%,50%);
+    transform: scale(1.02);
+}
+#create-form,#search-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 0.6rem;
+}
+.calc{
+    display: flex;
+    gap: 0.5rem;
+}
+.calc > input{
+    width: 20%;
+}
+.total{
+    background-color: hsl(0,50%,55%);
+    color: white;
+}
+.total::placeholder{
+    color: white;
+    font-weight: 600;
+}
+.right {
+    background-color: hsl(150,30%,45%);
+}
+.search-type{
+    display: flex;
+    justify-content: space-between;
+}
+.search-type > input {
+    width: 40%;
+}
+#item-table{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    width: 100%;
+    border-top: 0.2px solid hsl(100,100%,100%,0.3);
+    border-collapse: separate;
+}
+td:not(last-child) {
+    border-bottom: 0.2px solid hsl(100,100%,100%,0.3);
+}
+thead {
+    display: default !important;
+}
+.hide {
+    display: none;
+}
+.delete:hover{
+    background-color: hsl(0,50%,55%);
+}
+.update:hover{
+    background-color: hsl(150,30%,45%);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
